@@ -9,7 +9,7 @@
    Fletcher Malazarte — Portfolio
   </title>
   <!-- All visual styling is loaded from this stylesheet. -->
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="assets/css/style.css" rel="stylesheet"/>
  </head>
  <body>
   <!-- Persistent navigation: logo and links to the four main sections. -->
@@ -382,6 +382,19 @@
         PHP · HTML · CSS · MySQL
        </span>
       </button>
+      <!-- Oda Ramen: add oda-ramen.png to assets/images/. -->
+      <button type="button" aria-label="Read about Oda Ramen" class="polaroid" data-project="3">
+       <span class="project-visual violet">
+        <img class="project-image" src="assets/images/oda-ramen.png" alt="Oda Ramen ordering transaction system" loading="lazy"/>
+       </span>
+       <span class="polaroid-caption">
+        Oda Ramen <span>↗</span>
+       </span>
+       <span class="project-summary">
+        A ramen ordering transaction system designed to manage customer orders and organize order transactions.
+       </span>
+       <span class="project-sub">Python · Kotlin</span>
+      </button>
      </div>
      <p class="work-note">
       Open a frame for project details and my contributions.
@@ -513,6 +526,13 @@
    </p>
    <p class="project-detail-description">
     Designed the system architecture and ERD, then developed PHP backend functionality integrated with MySQL. Defined tables, relationships, constraints, and data integrity rules, and implemented business logic for inventory, product, and account management.
+   </p>
+  </template>
+  <template id="project-detail-3">
+   <h2 class="project-detail-title">Oda Ramen</h2>
+   <p class="project-detail-stack">Python · Kotlin</p>
+   <p class="project-detail-description">
+    Oda Ramen is a ramen ordering transaction system developed using Python and Kotlin. My primary contribution to the project was system design.
    </p>
   </template>
   <!-- Shared project detail dialog. JavaScript fills it from the templates above. -->
