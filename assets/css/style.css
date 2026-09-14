@@ -2145,3 +2145,35 @@ h3 {
   object-fit: cover;
   object-position: center;
 }
+
+/* Project popup resource links, styled as retro navigation buttons. */
+.project-detail-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px dashed #bca8cb;
+}
+.project-detail-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  min-height: 44px;
+  padding: 10px 16px;
+  border: 1px solid #705781;
+  border-radius: 2px;
+  background: #eee7f4;
+  color: #392846;
+  box-shadow: 2px 2px 0 #ab94bc;
+  font: 600 13px/1.3 'Courier New', monospace;
+  text-decoration: none;
+}
+.project-detail-links a[href]:hover { background: #decee9; }
+.project-detail-links a[href]:focus-visible { outline: 2px solid #72508f; outline-offset: 4px; }
+.project-detail-links a[aria-disabled="true"] {
+  opacity: .5;
+  box-shadow: none;
+  cursor: not-allowed;
+}

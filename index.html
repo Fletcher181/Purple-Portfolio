@@ -427,22 +427,14 @@
          fletchermalazarte18@gmail.com
         </strong>
        </a>
-       <div class="pending-social">
-        <span>
-         LinkedIn
-        </span>
-        <span>
-         Profile link coming soon
-        </span>
-       </div>
-       <div class="pending-social">
-        <span>
-         GitHub
-        </span>
-        <span>
-         Profile link coming soon
-        </span>
-       </div>
+       <a href="https://www.linkedin.com/in/fletchermalazarte18/" target="_blank" rel="noopener noreferrer">
+        <span>LinkedIn ↗</span>
+        <strong>Fletcher Malazarte</strong>
+       </a>
+       <a href="https://github.com/Fletcher181" target="_blank" rel="noopener noreferrer">
+        <span>GitHub ↗</span>
+        <strong>Fletcher181</strong>
+       </a>
       </div>
      </div>
      <!-- Demo only: required fields are validated; no message is delivered. -->
@@ -468,9 +460,6 @@
         ↗
        </span>
       </button>
-      <p class="form-note">
-       Demo only · messages aren’t delivered.
-      </p>
       <p id="form-status" role="status">
       </p>
      </form>
@@ -481,7 +470,7 @@
   <footer class="site-footer">
    <div class="footer-content">
     <span>
-     © 2026 Fletcher Malazarte · Lavender Video Diary
+     © 2026 Fletcher Malazarte · All Rights Reserved
     </span>
     <span class="footer-note">
      End of tape. More memories to come.
@@ -494,8 +483,8 @@
     </a>
    </div>
   </footer>
-  <!-- Project detail content: edit these templates to change the popup text. -->
-  <template id="project-detail-0">
+  <!-- Project popups: paste each project’s full URLs into data-figma-url and data-github-url. Leave empty when unavailable. -->
+  <template id="project-detail-0" data-figma-url="" data-github-url="https://github.com/Jiwonieee19/Ryview">
    <h2 class="project-detail-title">
     RyView
    </h2>
@@ -506,7 +495,7 @@
     Developed a Python system for binary classification of genuine and deceptive hotel reviews. Reduced false negatives by 50% compared with the baseline RoBERTa implementation. Built a Chrome extension for real-time review authenticity predictions, and conducted ablation studies to evaluate training optimizations and model generalization.
    </p>
   </template>
-  <template id="project-detail-1">
+  <template id="project-detail-1" data-figma-url="" data-github-url="https://github.com/Jiwonieee19/CPMS">
    <h2 class="project-detail-title">
     Auro Chocolates
    </h2>
@@ -517,7 +506,7 @@
     Analyzed system requirements and designed the overall data model. Created the ERD, defined database relationships, and developed database specifications and documentation for the implementation team. Collaborated with team members to align the design with business and operational requirements.
    </p>
   </template>
-  <template id="project-detail-2">
+  <template id="project-detail-2" data-figma-url="" data-github-url="https://github.com/Jiwonieee19/McPartsDEPOT">
    <h2 class="project-detail-title">
     McParts Depot
    </h2>
@@ -528,15 +517,15 @@
     Designed the system architecture and ERD, then developed PHP backend functionality integrated with MySQL. Defined tables, relationships, constraints, and data integrity rules, and implemented business logic for inventory, product, and account management.
    </p>
   </template>
-  <template id="project-detail-3">
+  <template id="project-detail-3" data-figma-url="" data-github-url="">
    <h2 class="project-detail-title">Oda Ramen</h2>
    <p class="project-detail-stack">Python · Kotlin</p>
    <p class="project-detail-description">
-    Oda Ramen is a ramen ordering transaction system developed using Python and Kotlin. My primary contribution to the project was system design.
+    Designed the system structure for a ramen ordering transaction system. Focused on how customer orders and transactions would flow through the application, providing a design foundation for implementation using Python and Kotlin.
    </p>
   </template>
   <!-- Shared project detail dialog. JavaScript fills it from the templates above. -->
-  <dialog id="detail">
+  <dialog id="detail" aria-labelledby="dialog-title">
    <button aria-label="Close dialog" class="close">
     ×
    </button>
@@ -546,6 +535,10 @@
    </h2>
    <p id="dialog-text">
    </p>
+   <div class="project-detail-links" aria-label="Project resources">
+    <a id="dialog-figma" aria-disabled="true">Figma <span aria-hidden="true">↗</span></a>
+    <a id="dialog-github" aria-disabled="true">GitHub <span aria-hidden="true">↗</span></a>
+   </div>
   </dialog>
   <div class="toast" id="toast" role="status">
   </div>
