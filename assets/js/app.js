@@ -130,7 +130,6 @@ contactForm.addEventListener("submit", (event) => {
 
     contactForm.removeAttribute("aria-busy");
     contactForm.reset();
-    $("#form-status").textContent = "Demo complete.";
 
     setTimeout(() => {
       button.classList.remove("sent");
